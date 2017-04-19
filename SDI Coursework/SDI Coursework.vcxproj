@@ -79,27 +79,46 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Customer.h" />
+    <ClInclude Include="CustomerFactory.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="EmployeeFactory.h" />
+    <ClInclude Include="FullTimeEmployee.h" />
     <ClInclude Include="GraphicsCard.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="ItemFactory.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="Motherboard.h" />
+    <ClInclude Include="PartTimeEmployee.h" />
+    <ClInclude Include="Person.h" />
     <ClInclude Include="PowerSupply.h" />
     <ClInclude Include="Processor.h" />
+    <ClInclude Include="RegardCustomer.h" />
+    <ClInclude Include="RegardEmployees.h" />
     <ClInclude Include="RegardItem.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Storage.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TemporaryEmployee.h" />
     <ClInclude Include="Tower.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="CustomerFactory.cpp" />
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="EmployeeFactory.cpp" />
+    <ClCompile Include="FullTimeEmployee.cpp" />
     <ClCompile Include="GraphicsCard.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="ItemFactory.cpp" />
     <ClCompile Include="Memory.cpp" />
     <ClCompile Include="Motherboard.cpp" />
+    <ClCompile Include="PartTimeEmployee.cpp" />
+    <ClCompile Include="Person.cpp" />
     <ClCompile Include="PowerSupply.cpp" />
     <ClCompile Include="Processor.cpp" />
+    <ClCompile Include="RegardCustomer.cpp" />
+    <ClCompile Include="RegardEmployees.cpp" />
     <ClCompile Include="RegardItem.cpp" />
     <ClCompile Include="SDI Coursework.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -107,6 +126,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Storage.cpp" />
+    <ClCompile Include="TemporaryEmployee.cpp" />
     <ClCompile Include="Tower.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

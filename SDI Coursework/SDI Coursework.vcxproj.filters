@@ -19,6 +19,24 @@
     <Filter Include="Header Files\All-Item">
       <UniqueIdentifier>{66397d05-56a7-4f4f-b925-825a5d5eabd3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\All-Person">
+      <UniqueIdentifier>{e84a88d1-dfb1-46e2-ac56-8ba38da24b36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\All-Person">
+      <UniqueIdentifier>{86ce9eaa-a4ae-40ec-85f6-7a52ab520759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\All-Person\Employee">
+      <UniqueIdentifier>{4b560385-5a39-441f-a442-b553acf98f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\All-Person\Employee">
+      <UniqueIdentifier>{d1ce4d68-a48f-4725-8874-e67da8ef05b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\All-Person\Customer">
+      <UniqueIdentifier>{e4f83615-e585-45fc-85f5-54c75da4d0fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\All-Person\Customer">
+      <UniqueIdentifier>{43f7b70f-d9ee-4dc3-8dff-95adac6534b7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -60,6 +78,36 @@
     <ClInclude Include="GraphicsCard.h">
       <Filter>Header Files\All-Item</Filter>
     </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>Header Files\All-Person</Filter>
+    </ClInclude>
+    <ClInclude Include="Employee.h">
+      <Filter>Header Files\All-Person\Employee</Filter>
+    </ClInclude>
+    <ClInclude Include="EmployeeFactory.h">
+      <Filter>Header Files\All-Person\Employee</Filter>
+    </ClInclude>
+    <ClInclude Include="FullTimeEmployee.h">
+      <Filter>Header Files\All-Person\Employee</Filter>
+    </ClInclude>
+    <ClInclude Include="PartTimeEmployee.h">
+      <Filter>Header Files\All-Person\Employee</Filter>
+    </ClInclude>
+    <ClInclude Include="RegardEmployees.h">
+      <Filter>Header Files\All-Person\Employee</Filter>
+    </ClInclude>
+    <ClInclude Include="TemporaryEmployee.h">
+      <Filter>Header Files\All-Person\Employee</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>Header Files\All-Person\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerFactory.h">
+      <Filter>Header Files\All-Person\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="RegardCustomer.h">
+      <Filter>Header Files\All-Person\Customer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -97,6 +145,36 @@
     </ClCompile>
     <ClCompile Include="Tower.cpp">
       <Filter>Source Files\All-Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files\All-Person</Filter>
+    </ClCompile>
+    <ClCompile Include="Employee.cpp">
+      <Filter>Source Files\All-Person\Employee</Filter>
+    </ClCompile>
+    <ClCompile Include="EmployeeFactory.cpp">
+      <Filter>Source Files\All-Person\Employee</Filter>
+    </ClCompile>
+    <ClCompile Include="FullTimeEmployee.cpp">
+      <Filter>Source Files\All-Person\Employee</Filter>
+    </ClCompile>
+    <ClCompile Include="PartTimeEmployee.cpp">
+      <Filter>Source Files\All-Person\Employee</Filter>
+    </ClCompile>
+    <ClCompile Include="RegardEmployees.cpp">
+      <Filter>Source Files\All-Person\Employee</Filter>
+    </ClCompile>
+    <ClCompile Include="TemporaryEmployee.cpp">
+      <Filter>Source Files\All-Person\Employee</Filter>
+    </ClCompile>
+    <ClCompile Include="Customer.cpp">
+      <Filter>Source Files\All-Person\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerFactory.cpp">
+      <Filter>Source Files\All-Person\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="RegardCustomer.cpp">
+      <Filter>Source Files\All-Person\Customer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

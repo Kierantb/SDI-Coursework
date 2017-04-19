@@ -1,5 +1,7 @@
 #pragma once
-class GraphicsCard
+#include "Item.h"
+class GraphicsCard :
+	public Item
 {
 public:
 	GraphicsCard();

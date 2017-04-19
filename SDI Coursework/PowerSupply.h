@@ -1,5 +1,7 @@
 #pragma once
-class PowerSupply
+#include "Item.h"
+class PowerSupply :
+	public Item
 {
 public:
 	PowerSupply();

@@ -1,5 +1,7 @@
 #pragma once
-class Storage
+#include "Item.h"
+class Storage :
+	public Item
 {
 public:
 	Storage();

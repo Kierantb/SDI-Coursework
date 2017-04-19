@@ -1,5 +1,7 @@
 #pragma once
-class Motherboard
+#include "Item.h"
+class Motherboard :
+	public Item
 {
 public:
 	Motherboard();

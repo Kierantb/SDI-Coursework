@@ -1,5 +1,7 @@
 #pragma once
-class Memory
+#include "Item.h"
+class Memory :
+	public Item
 {
 public:
 	Memory();

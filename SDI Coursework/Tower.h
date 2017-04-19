@@ -1,5 +1,7 @@
 #pragma once
-class Tower
+#include "Item.h"
+class Tower :
+	public Item
 {
 public:
 	Tower();

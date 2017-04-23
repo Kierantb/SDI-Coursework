@@ -13,29 +13,47 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\All-Item">
-      <UniqueIdentifier>{0acf26d5-c017-47cc-a235-37bb66b2c9a8}</UniqueIdentifier>
+    <Filter Include="Header Files\Controller">
+      <UniqueIdentifier>{f8fcffc5-fe03-4371-a60a-bd4bb4cbe1f3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\All-Item">
+    <Filter Include="Header Files\View">
+      <UniqueIdentifier>{b133ba92-7ac9-4a27-b6fc-3d2838cae461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model">
+      <UniqueIdentifier>{1d826083-822b-4a3f-b572-8e5c0460a359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model\All-Item">
       <UniqueIdentifier>{66397d05-56a7-4f4f-b925-825a5d5eabd3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\All-Person">
+    <Filter Include="Header Files\Model\All-Person">
       <UniqueIdentifier>{e84a88d1-dfb1-46e2-ac56-8ba38da24b36}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\All-Person">
-      <UniqueIdentifier>{86ce9eaa-a4ae-40ec-85f6-7a52ab520759}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\All-Person\Employee">
+    <Filter Include="Header Files\Model\All-Person\Employee">
       <UniqueIdentifier>{4b560385-5a39-441f-a442-b553acf98f94}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\All-Person\Employee">
+    <Filter Include="Header Files\Model\All-Person\Customer">
+      <UniqueIdentifier>{43f7b70f-d9ee-4dc3-8dff-95adac6534b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{e1013e55-bb60-48e5-becb-96c0e3e20b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\View">
+      <UniqueIdentifier>{4720b7bd-58f2-4c39-8f1d-c98b8dc48ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controller">
+      <UniqueIdentifier>{6e3a67e9-073b-4c81-b6f7-26c72f0658c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\All-Item">
+      <UniqueIdentifier>{0acf26d5-c017-47cc-a235-37bb66b2c9a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\All-Person">
+      <UniqueIdentifier>{86ce9eaa-a4ae-40ec-85f6-7a52ab520759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\All-Person\Employee">
       <UniqueIdentifier>{d1ce4d68-a48f-4725-8874-e67da8ef05b4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\All-Person\Customer">
+    <Filter Include="Source Files\Model\All-Person\Customer">
       <UniqueIdentifier>{e4f83615-e585-45fc-85f5-54c75da4d0fd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\All-Person\Customer">
-      <UniqueIdentifier>{43f7b70f-d9ee-4dc3-8dff-95adac6534b7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -49,79 +67,79 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Item.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="ItemFactory.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="Memory.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="Motherboard.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="PowerSupply.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="Processor.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="RegardItem.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="Storage.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="Tower.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="Person.h">
-      <Filter>Header Files\All-Person</Filter>
+      <Filter>Header Files\Model\All-Person</Filter>
     </ClInclude>
     <ClInclude Include="Employee.h">
-      <Filter>Header Files\All-Person\Employee</Filter>
+      <Filter>Header Files\Model\All-Person\Employee</Filter>
     </ClInclude>
     <ClInclude Include="EmployeeFactory.h">
-      <Filter>Header Files\All-Person\Employee</Filter>
+      <Filter>Header Files\Model\All-Person\Employee</Filter>
     </ClInclude>
     <ClInclude Include="FullTimeEmployee.h">
-      <Filter>Header Files\All-Person\Employee</Filter>
+      <Filter>Header Files\Model\All-Person\Employee</Filter>
     </ClInclude>
     <ClInclude Include="PartTimeEmployee.h">
-      <Filter>Header Files\All-Person\Employee</Filter>
+      <Filter>Header Files\Model\All-Person\Employee</Filter>
     </ClInclude>
     <ClInclude Include="RegardEmployees.h">
-      <Filter>Header Files\All-Person\Employee</Filter>
+      <Filter>Header Files\Model\All-Person\Employee</Filter>
     </ClInclude>
     <ClInclude Include="TemporaryEmployee.h">
-      <Filter>Header Files\All-Person\Employee</Filter>
+      <Filter>Header Files\Model\All-Person\Employee</Filter>
     </ClInclude>
     <ClInclude Include="Customer.h">
-      <Filter>Header Files\All-Person\Customer</Filter>
+      <Filter>Header Files\Model\All-Person\Customer</Filter>
     </ClInclude>
     <ClInclude Include="CustomerFactory.h">
-      <Filter>Header Files\All-Person\Customer</Filter>
+      <Filter>Header Files\Model\All-Person\Customer</Filter>
     </ClInclude>
     <ClInclude Include="RegardCustomer.h">
-      <Filter>Header Files\All-Person\Customer</Filter>
+      <Filter>Header Files\Model\All-Person\Customer</Filter>
     </ClInclude>
     <ClInclude Include="PC.h">
-      <Filter>Header Files\All-Item</Filter>
-    </ClInclude>
-    <ClInclude Include="FileManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SystemManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
     <ClInclude Include="GraphicsCard.h">
-      <Filter>Header Files\All-Item</Filter>
+      <Filter>Header Files\Model\All-Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemManager.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>Header Files\Controller</Filter>
     </ClInclude>
     <ClInclude Include="View.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\View</Filter>
     </ClInclude>
     <ClInclude Include="RegardNetWealth.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Model</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -132,79 +150,79 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Item.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="ItemFactory.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="Motherboard.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="Memory.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="PowerSupply.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="Processor.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="RegardItem.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="Storage.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="Tower.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="Person.cpp">
-      <Filter>Source Files\All-Person</Filter>
+      <Filter>Source Files\Model\All-Person</Filter>
     </ClCompile>
     <ClCompile Include="Employee.cpp">
-      <Filter>Source Files\All-Person\Employee</Filter>
+      <Filter>Source Files\Model\All-Person\Employee</Filter>
     </ClCompile>
     <ClCompile Include="EmployeeFactory.cpp">
-      <Filter>Source Files\All-Person\Employee</Filter>
+      <Filter>Source Files\Model\All-Person\Employee</Filter>
     </ClCompile>
     <ClCompile Include="FullTimeEmployee.cpp">
-      <Filter>Source Files\All-Person\Employee</Filter>
+      <Filter>Source Files\Model\All-Person\Employee</Filter>
     </ClCompile>
     <ClCompile Include="PartTimeEmployee.cpp">
-      <Filter>Source Files\All-Person\Employee</Filter>
+      <Filter>Source Files\Model\All-Person\Employee</Filter>
     </ClCompile>
     <ClCompile Include="RegardEmployees.cpp">
-      <Filter>Source Files\All-Person\Employee</Filter>
+      <Filter>Source Files\Model\All-Person\Employee</Filter>
     </ClCompile>
     <ClCompile Include="TemporaryEmployee.cpp">
-      <Filter>Source Files\All-Person\Employee</Filter>
+      <Filter>Source Files\Model\All-Person\Employee</Filter>
     </ClCompile>
     <ClCompile Include="Customer.cpp">
-      <Filter>Source Files\All-Person\Customer</Filter>
+      <Filter>Source Files\Model\All-Person\Customer</Filter>
     </ClCompile>
     <ClCompile Include="CustomerFactory.cpp">
-      <Filter>Source Files\All-Person\Customer</Filter>
+      <Filter>Source Files\Model\All-Person\Customer</Filter>
     </ClCompile>
     <ClCompile Include="RegardCustomer.cpp">
-      <Filter>Source Files\All-Person\Customer</Filter>
+      <Filter>Source Files\Model\All-Person\Customer</Filter>
     </ClCompile>
     <ClCompile Include="PC.cpp">
-      <Filter>Source Files\All-Item</Filter>
-    </ClCompile>
-    <ClCompile Include="FileManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SystemManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="GraphicsCard.cpp">
-      <Filter>Source Files\All-Item</Filter>
+      <Filter>Source Files\Model\All-Item</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemManager.cpp">
+      <Filter>Source Files\Controller</Filter>
     </ClCompile>
     <ClCompile Include="View.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\View</Filter>
     </ClCompile>
     <ClCompile Include="RegardNetWealth.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Model</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

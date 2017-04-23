@@ -1,8 +1,11 @@
 #pragma once
-class PartTimeEmployee
+#include "Employee.h"
+class PartTimeEmployee :
+	public Employee
 {
 public:
 	PartTimeEmployee();
 	~PartTimeEmployee();
+private:
 };
 

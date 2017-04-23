@@ -5,8 +5,10 @@
 FullTimeEmployee::FullTimeEmployee()
 {
 }
-
-
+float FullTimeEmployee::GetMonthlyPay()
+{
+	return _annualSalary / 12;
+}
 FullTimeEmployee::~FullTimeEmployee()
 {
 }

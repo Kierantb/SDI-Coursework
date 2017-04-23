@@ -6,7 +6,6 @@ TemporaryEmployee::TemporaryEmployee()
 {
 }
 
-
 TemporaryEmployee::~TemporaryEmployee()
 {
 }

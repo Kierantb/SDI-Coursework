@@ -6,5 +6,9 @@ class Employee :
 public:
 	Employee();
 	~Employee();
+	virtual float GetMonthlyPay(); // hourly pay * hours worked. Can be overridden by child class.
+private:
+	float _hoursWorked;
+	float _hourlyWage;
 };
 

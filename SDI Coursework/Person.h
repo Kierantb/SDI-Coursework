@@ -11,6 +11,7 @@ public:
 	void Person::SetFirstName(string newName);
 	void Person::SetEmail(string newName);
 	string Person::GetName();
+	int Person::GetID();
 
 private:
 	int _id;

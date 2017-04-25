@@ -4,6 +4,9 @@
 
 Person::Person()
 {
+	_id = 0;
+	_firstName = "";
+	_email = "";
 }
 void Person::SetID(string newID)
 {
@@ -20,6 +23,10 @@ void Person::SetEmail(string newEmail)
 string Person::GetName()
 {
 	return _firstName;
+}
+int Person::GetID()
+{
+	return _id;
 }
 Person::~Person()
 {

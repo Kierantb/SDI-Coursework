@@ -12,10 +12,10 @@ Employee* EmployeeFactory::CreateEmployee(string newEmployeeRecord) const
 {
 	Employee* newEmployee = 0;
 
-	string employeeInfo[4]; // type, id, name, email
+	string employeeInfo[6]; // type, id, name, email
 	int i = 0;
 	stringstream ssin(newEmployeeRecord);
-	while (ssin.good() && i < 4)
+	while (ssin.good() && i < 6)
 	{
 		ssin >> employeeInfo[i]; // each word read is set to an array element
 		++i;
@@ -34,9 +34,12 @@ Employee* EmployeeFactory::CreateEmployee(string newEmployeeRecord) const
 		newEmployee = new TemporaryEmployee();
 	}
 
-	newEmployee->SetID(employeeInfo[1]);
-	newEmployee->SetFirstName(employeeInfo[2]);
-	newEmployee->SetEmail(employeeInfo[3]);
+	newEmployee->SetType(employeeInfo[0]); // type - needed for writing data back to file
+	newEmployee->SetID(employeeInfo[1]); // ID
+	newEmployee->SetFirstName(employeeInfo[2]); // name
+	newEmployee->SetEmail(employeeInfo[3]); // email
+	newEmployee->SetWages(employeeInfo[4]); // hourly or yearly wage
+	newEmployee->SetHoursWorked(employeeInfo[5]); // hours worked
 
 	return newEmployee; 
 }

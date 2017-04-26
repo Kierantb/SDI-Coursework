@@ -7,7 +7,13 @@ class Item
 public:
 	Item();
 	~Item();
+	void SetType(string newType);
+	void SetID(string newID);
+	void SetName(string newName);
+	void SetBuyPrice(string newBuyPrice);
+	void SetSellPrice(string newSellPrice);
 private:
+	string _type;
 	int _id;
 	string _name;
 	double _buyPrice;

@@ -12,10 +12,13 @@ public:
 	void DisplayMainMenu();
 	void DisplayMenuSelectionRequest();
 	void DisplayInputRequest();
-	int GetUserInput();
+	void DisplayEmployeeFormat();
+	int GetUserIntInput();
+	string GetUserStringInput();
 	// display main menu options
 	// functions to get user input - used in system while loop and swtich statement
 private:
-	int _userInput;
+	int _intInput;
+	string _stringInput;
 };
 

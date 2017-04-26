@@ -6,9 +6,17 @@ class Employee :
 public:
 	Employee();
 	~Employee();
+	void SetType(string newType);
+	virtual void SetWages(string newHourlyWage);
+	void SetHoursWorked(string newHoursWorked);
+	string GetType();
+	float GetHoursWorked();
 	virtual float GetMonthlyPay(); // hourly pay * hours worked. Can be overridden by child class.
+	virtual float GetWages();
+
 private:
-	float _hoursWorked;
+	string _type;
+	float _hoursPerMonth;
 	float _hourlyWage;
 };
 

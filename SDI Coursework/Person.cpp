@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "Person.h"
 
-
 Person::Person()
 {
 	_id = 0;
@@ -20,13 +19,17 @@ void Person::SetEmail(string newEmail)
 {
 	_email = newEmail;
 }
+int Person::GetID()
+{
+	return _id;
+}
 string Person::GetName()
 {
 	return _firstName;
 }
-int Person::GetID()
+string Person::GetEmail()
 {
-	return _id;
+	return _email;
 }
 Person::~Person()
 {

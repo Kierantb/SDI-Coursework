@@ -2,6 +2,7 @@
 #include "RegardEmployees.h"
 #include <iostream>
 #include <vector>
+#include <algorithm> // find
 using namespace std;
 
 
@@ -11,6 +12,12 @@ RegardEmployees::RegardEmployees()
 void RegardEmployees::AddEmployee(Employee * newEmployee)
 {
 	_currentEmployees.push_back(newEmployee);
+}
+void RegardEmployees::DeleteEmployee(Employee* newEmployee)
+{
+	vector<Employee*>::iterator index = find(_currentEmployees.begin(), _currentEmployees.end(), newEmployee);
+	if (index != _currentEmployees.end())
+		_currentEmployees.erase(index);
 }
 vector<Employee*>& RegardEmployees::GetAllEmployees() // maybe make const, const
 {
@@ -57,8 +64,22 @@ Employee* RegardEmployees::SearchID(vector<Employee*> &sortedEmployees, int newI
 			high = mid - 1; // set new high point to the old mid point - 1 if the search value is less than the midpoint value
 		}
 	}
-	return nullptr; // result might not exist - find better way to handle this
+	return 0; // result might not exist - find better way to handle this
 }
+
+Employee* RegardEmployees::SearchName(vector<Employee*> &employees, string newName) // binary search
+{
+	size_t length = employees.size();
+	for (size_t i = 0; i < length; i++)
+	{
+		if (newName == employees[i]->GetName())
+		{
+			return employees[i];
+		}
+	}
+	return 0;
+}
+
 RegardEmployees::~RegardEmployees()
 {
 }

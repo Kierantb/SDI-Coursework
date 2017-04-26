@@ -10,8 +10,9 @@ public:
 	void Person::SetID(string newID);
 	void Person::SetFirstName(string newName);
 	void Person::SetEmail(string newName);
-	string Person::GetName();
 	int Person::GetID();
+	string Person::GetName();
+	string Person::GetEmail();
 
 private:
 	int _id;

@@ -21,5 +21,8 @@ private:
 
 	bool _isRunning;
 	int _choice;
+	Employee* _newEmployee;
+	int _intSearchVal;
+	string _strSearchVal;
 };
 

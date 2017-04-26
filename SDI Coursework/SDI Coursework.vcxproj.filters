@@ -84,9 +84,6 @@
     <ClInclude Include="Processor.h">
       <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
-    <ClInclude Include="RegardItem.h">
-      <Filter>Header Files\Model\All-Item</Filter>
-    </ClInclude>
     <ClInclude Include="Storage.h">
       <Filter>Header Files\Model\All-Item</Filter>
     </ClInclude>
@@ -141,6 +138,9 @@
     <ClInclude Include="RegardNetWealth.h">
       <Filter>Header Files\Model</Filter>
     </ClInclude>
+    <ClInclude Include="RegardItem.h">
+      <Filter>Header Files\Model\All-Item</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -165,9 +165,6 @@
       <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="Processor.cpp">
-      <Filter>Source Files\Model\All-Item</Filter>
-    </ClCompile>
-    <ClCompile Include="RegardItem.cpp">
       <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
     <ClCompile Include="Storage.cpp">
@@ -223,6 +220,9 @@
     </ClCompile>
     <ClCompile Include="RegardNetWealth.cpp">
       <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="RegardItem.cpp">
+      <Filter>Source Files\Model\All-Item</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

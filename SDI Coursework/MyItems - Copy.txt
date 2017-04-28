@@ -1,0 +1,12 @@
+Tower 1 MicroLenovo 200.00 250.00
+Memory 2 DDR 40.00 60.00
+PowerSupply 3 Gold 30.00 50.00
+Processor 4 AMD08 80.00 130.00
+GraphicsCard 5 GPUhz1 100.00 150.00
+Storage 6 Transcend-1tb 30.00 50.00
+Tower 7 Mid 210.00 260.00
+Memory 8 RAM 30.00 55.00
+PowerSupply 9 Silver 20.00 40.00
+Processor 10 AMD10 90.00 150.00
+GraphicsCard 11 GPU2 105.00 155.00
+Storage 12 Windin 35.00 55.00

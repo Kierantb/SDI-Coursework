@@ -12,6 +12,9 @@ public:
 	void SetName(string newName);
 	void SetBuyPrice(string newBuyPrice);
 	void SetSellPrice(string newSellPrice);
+
+	string GetType();
+	string GetName();
 private:
 	string _type;
 	int _id;

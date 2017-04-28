@@ -1,0 +1,4 @@
+PartTimeEmployee 1 Kieran kb@hotmail.co.uk 7.80 12
+FullTimeEmployee 2 Mark mm@hotmail.co.uk 13000 35
+TemporaryEmployee 3 Callum cg@hotmail.co.uk 6.70 8
+FullTimeEmployee 4 Alex ad@hotmail.com 15000 30

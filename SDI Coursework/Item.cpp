@@ -30,6 +30,14 @@ void Item::SetSellPrice(string newSellPrice)
 {
 	_sellPrice = stod(newSellPrice, 0);
 }
+string Item::GetType()
+{
+	return _type;
+}
+string Item::GetName()
+{
+	return _name;
+}
 Item::~Item()
 {
 }

@@ -16,6 +16,7 @@ void View::DisplayAllEmployees(vector<Employee*> &allEmployees)
 		cout << allEmployees[i]->GetName() << endl;
 	}
 }
+
 void View::DisplayEmployee(Employee* newEmployee)
 {
 	cout << "\nResult:\n" << endl;
@@ -25,7 +26,14 @@ void View::DisplayEmployee(Employee* newEmployee)
 	cout << "Email: " << newEmployee->GetEmail() << endl;
 	cout << "Monthly Wage: " << newEmployee->GetMonthlyPay() << endl;
 }
-
+void View::DisplayAllItems(vector<Item*> &allItems)
+{
+	cout << "\nResult:\n" << endl;
+	for (size_t i = 0; i < allItems.size(); i++)
+	{
+		cout << allItems[i]->GetType() << ": " << allItems[i]->GetName() << endl;
+	}
+}
 void View::DisplayMainMenu()
 {
 	cout << "\t\t PC Builder Application\n\n" << endl;
@@ -33,7 +41,8 @@ void View::DisplayMainMenu()
 	cout << "1. - Search for Employee ID" << endl;
 	cout << "2. - Search for Employee Name" << endl;
 	cout << "3. - Add Employee" << endl;
-	cout << "4. - Delete Employee" << endl;
+	cout << "4. - Delete Employee by ID" << endl;
+	cout << "5. - Display all items" << endl;
 }
 void View::DisplayEmployeeFormat()
 {

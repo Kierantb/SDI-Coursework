@@ -16,7 +16,7 @@ Item* ItemFactory::CreateItem(string newItemRecord) const
 {
 	Item* newItem = 0;
 
-	string itemInfo[5]; // type, id, name, email
+	string itemInfo[5]; // type, id, name, buy price, sell price
 	int i = 0;
 	stringstream ssin(newItemRecord);
 	while (ssin.good() && i < 5)
@@ -51,12 +51,12 @@ Item* ItemFactory::CreateItem(string newItemRecord) const
 	}
 	else if (itemInfo[0].compare("Storage") == 0)
 	{
-		newItem = new Storage();
+		newItem = new Storage(); //set capacity
 	}
 
 	newItem->SetType(itemInfo[0]);
 	newItem->SetID(itemInfo[1]);
-	newItem->SetName(itemInfo[2]);
+	newItem->SetName(itemInfo[2]); // change to "brand"
 	newItem->SetBuyPrice(itemInfo[3]);
 	newItem->SetSellPrice(itemInfo[4]);
 

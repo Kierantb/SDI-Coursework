@@ -3,6 +3,8 @@
 #include "FileManager.h"
 #include "EmployeeFactory.h"
 #include "RegardEmployees.h"
+#include "ItemFactory.h"
+#include "RegardItem.h"
 #include <vector>
 class SystemManager
 {
@@ -11,17 +13,22 @@ public:
 	~SystemManager();
 	void StartSystem(); // single function to initiate system and loop through options
 	void ParseEmployees();
+	void ParseItems();
 	
 private:
 	View* _v;
 	FileManager* _fm;
+
+	Employee* _newEmployee;
 	EmployeeFactory* _ef;
 	RegardEmployees* _re;
-	vector <Employee *> employees;
+
+	Item* _newItem;
+	ItemFactory* _if;
+	RegardItem* _ri;
 
 	bool _isRunning;
 	int _choice;
-	Employee* _newEmployee;
 	int _intSearchVal;
 	string _strSearchVal;
 };

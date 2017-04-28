@@ -13,17 +13,19 @@ void RegardEmployees::AddEmployee(Employee * newEmployee)
 {
 	_currentEmployees.push_back(newEmployee);
 }
-void RegardEmployees::DeleteEmployee(Employee* newEmployee)
+void RegardEmployees::DeleteEmployee(Employee* newEmployee) // maybe make bool
 {
 	vector<Employee*>::iterator index = find(_currentEmployees.begin(), _currentEmployees.end(), newEmployee);
 	if (index != _currentEmployees.end())
+	{
 		_currentEmployees.erase(index);
+	}
 }
 vector<Employee*>& RegardEmployees::GetAllEmployees() // maybe make const, const
 {
 	return _currentEmployees; // returns reference
 }
-void RegardEmployees::SortByID(vector<Employee*> &unsortedEmployees) // can be void?
+void RegardEmployees::SortByID(vector<Employee*> &unsortedEmployees) 
 {
 	int length = unsortedEmployees.size();
 

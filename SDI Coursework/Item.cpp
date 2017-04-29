@@ -38,6 +38,14 @@ string Item::GetName()
 {
 	return _name;
 }
+double Item::GetBuyPrice()
+{
+	return _buyPrice;
+}
+double Item::GetSellPrice()
+{
+	return _sellPrice;
+}
 Item::~Item()
 {
 }

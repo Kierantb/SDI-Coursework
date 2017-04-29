@@ -1,6 +1,7 @@
 #pragma once
 #include "Employee.h"
 #include "Item.h"
+#include "PC.h"
 #include <vector>
 
 class View
@@ -17,6 +18,11 @@ public:
 	void DisplayEmployeeFormat();
 
 	void DisplayAllItems(vector<Item*> &allItems);
+	void DisplayAllPCsPrice(vector<PC*> &allPCs);
+	void DisplayPCBuild(vector<PC*> &allPCs);
+	void DisplayItemName(vector<Item*> &itemVector);
+	void DisplayPCWithinPriceRange(double low, double high, vector<PC*> &allPCs);
+	void DisplayPCBuildAtIndex(vector<PC*> &allPCs, int index);
 
 	int GetUserIntInput();
 	string GetUserStringInput();

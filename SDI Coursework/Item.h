@@ -15,6 +15,8 @@ public:
 
 	string GetType();
 	string GetName();
+	double GetBuyPrice();
+	double GetSellPrice();
 private:
 	string _type;
 	int _id;

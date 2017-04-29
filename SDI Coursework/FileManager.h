@@ -10,5 +10,5 @@ public:
 	FileManager();
 	~FileManager();
 	vector<string> CreateVectorOfLines(string newFileName);
-	void OverwriteFile(string newFileName, vector<Employee*>& currentEmployees);
+	void OverwriteEmployeeFile(string newFileName, vector<Employee*>& currentEmployees);
 };

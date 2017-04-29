@@ -20,7 +20,7 @@ vector<string> FileManager::CreateVectorOfLines(string newFileName)
 	inFile.close();
 	return lineInfo; // returns vector of lines used by factories
 }
-void FileManager::OverwriteFile(string newFileName, vector<Employee*>& currentEmployees) // potentially make bool and pass result to view?
+void FileManager::OverwriteEmployeeFile(string newFileName, vector<Employee*>& currentEmployees) // potentially make bool and pass result to view?
 {
 	ofstream outFile(newFileName);
 

@@ -14,3 +14,5 @@ PowerSupply 9 Bronze 5.00 10.00
 Processor 10 AMD02 20.00 40.00
 GraphicsCard 11 GPU1 50.00 60.00
 Storage 12 myMemory 10.00 20.00
+Motherboard 14 AMDYo 100.00 200.00
+Motherboard 15 ITC 110.00 205.00

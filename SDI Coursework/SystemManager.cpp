@@ -16,9 +16,12 @@ SystemManager::SystemManager()
 	_re = new RegardEmployees();
 	_if = new ItemFactory();
 	_ri = new RegardItem();
+	_cf = new CustomerFactory();
+	_rc = new RegardCustomer();
 
 	_newEmployee = NULL;
 	_newItem = NULL;
+	_newCustomer = NULL;
 
 	_isRunning = true;
 	_choice = 0;
@@ -36,6 +39,16 @@ void SystemManager::ParseEmployees()
 		_re->AddEmployee(_newEmployee); // get employee method to return vector
 	}
 }
+void SystemManager::ParseCustomers()
+{
+	vector<string> myCustomers;
+	myCustomers = _fm->CreateVectorOfLines("MyCustomers.txt");
+	for (vector<string>::iterator it = myCustomers.begin(); it != myCustomers.end(); ++it)
+	{
+		_newCustomer = _cf->CreateCustomer(*it); // Factory creates an employee
+		_rc->AddCustomer(_newCustomer); // get employee method to return vector
+	}
+}
 void SystemManager::ParseItems()
 {
 	vector<string> myItems;
@@ -49,8 +62,9 @@ void SystemManager::ParseItems()
 void SystemManager::StartSystem()
 {
 	ParseEmployees();
+	ParseCustomers();
 	ParseItems();
-	_ri->SortItemType();
+	_ri->SortItemType(); // create function for these actions
 	_ri->BuildAllPCs();
 
 	int va2 = 0;
@@ -68,8 +82,8 @@ void SystemManager::StartSystem()
 		case 1: // search by ID
 			_v->DisplayInputRequest();
 			_intSearchVal = _v->GetUserIntInput(); // make search val an _member variable?
-			_re->SortByID(_re->GetAllEmployees()); // takes a vector refence
-			_v->DisplayEmployee(_re->SearchID(_re->GetAllEmployees(), _intSearchVal));
+			_re->SortByID(_re->GetAllEmployees()); // takes a vector reference
+			_v->DisplayEmployee(_re->SearchID(_re->GetAllEmployees(), _intSearchVal)); // could be made clearer
 			break;
 		case 2: // search by name
 			_v->DisplayInputRequest();
@@ -92,6 +106,7 @@ void SystemManager::StartSystem()
 			_re->DeleteEmployee(_newEmployee);
 			_fm->OverwriteEmployeeFile("MyEmployees.txt", _re->GetAllEmployees()); // needs fixing
 			break;
+			// ITEM STUFF BELOW
 		case 5: // display all item names
 			_v->DisplayAllItems(_ri->GetAllItems());
 			break;
@@ -110,7 +125,31 @@ void SystemManager::StartSystem()
 			_intSearchVal = _v->GetUserIntInput();
 			_v->DisplayPCBuildAtIndex(_ri->GetAllPCs(), _intSearchVal);
 			break;
-		case 9: //customer stuff
+			// CUSTOMER STUFF BELOW
+		case 9: // display customer names
+			_v->DisplayAllCustomerNames(_rc->GetAllCustomers());
+			break;
+		case 10: // find customer
+			_v->DisplayInputRequest(); // customer will have their ID with ID number
+			_intSearchVal = _v->GetUserIntInput(); // user enters the customers ID
+			_newCustomer = _rc->GetCustomerByID(_intSearchVal); // now we know who wants to add item to basket below
+			break;
+		case 11: // add item to basket
+			_v->DisplayInputRequest();
+			_v->DisplayIDRequest();
+			_intSearchVal = _v->GetUserIntInput();
+			_ri->SortItemByID(_ri->GetAllItems()); // sort items by ID
+			_newItem = _ri->SearchItemByID(_ri->GetAllItems(), _intSearchVal); // find item by id
+			_newCustomer->AddItemToBasket(_newItem); // add item to current customers basket
+			break;
+		case 12: // create membership
+			_newCustomer->SetMembership("True"); // versatile
+			break;
+		case 13: // buy items
+			//_rc->SendItems(_newCustomer->GetBasket());
+			_v->PrintReceipt(_newCustomer->GetBasket());
+			_ri->RemoveBasketFromItems(_newCustomer->GetBasket()); // needs implementing
+			//_rc->SendEmail();
 			break;
 		}
 	}

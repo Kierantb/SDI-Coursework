@@ -11,8 +11,8 @@ Processor 10 AMD10 90.00 150.00
 GraphicsCard 11 GPU2 105.00 155.00
 Storage 12 Windin 35.00 55.00
 PowerSupply 9 Bronze 5.00 10.00
-Processor 10 AMD02 20.00 40.00
-GraphicsCard 11 GPU1 50.00 60.00
-Storage 12 myMemory 10.00 20.00
-Motherboard 14 AMDYo 100.00 200.00
-Motherboard 15 ITC 110.00 205.00
+Processor 13 AMD02 20.00 40.00
+GraphicsCard 14 GPU1 50.00 60.00
+Storage 15 myMemory 10.00 20.00
+Motherboard 16 AMDYo 100.00 200.00
+Motherboard 17 ITC 110.00 205.00

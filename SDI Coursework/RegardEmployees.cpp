@@ -9,7 +9,7 @@ using namespace std;
 RegardEmployees::RegardEmployees()
 {
 }
-void RegardEmployees::AddEmployee(Employee * newEmployee)
+void RegardEmployees::AddEmployee(Employee* newEmployee)
 {
 	_currentEmployees.push_back(newEmployee);
 }

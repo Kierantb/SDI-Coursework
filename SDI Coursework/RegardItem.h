@@ -18,12 +18,14 @@ public:
 	double GetPCPrice(PC* pc);
 
 	PC* CreatePC(Item* newTower, Item* newMotherboard, Item* newProcessor, Item* newMemory, 
-								Item* newPowerSupply, Item* newGraphicsCard, Item* newStorage); // single elements of specific vectors
+								Item* newPowerSupply, Item* newGraphicsCard, Item* newStorage);
 	void SortItemType(); 
 	void BuildAllPCs();
+	void SortItemByID(vector<Item*> &unsortedItems);
+	Item* SearchItemByID(vector<Item*> &sortedItems, int searchValue);
 
-	// FOCUS ON BUILD PC
-	// Have function to return costs and profits
+	void RemoveBasketFromItems(vector<Item*> &customerBasket);
+
 private:
 	vector<Item*> _currentItems; // vector to hold items
 	vector<PC*> _currentPCs;
@@ -37,3 +39,5 @@ private:
 	vector<Item*> _storageCollection;
 };
 
+// FOCUS ON BUILD PC
+// Have function to return costs and profits

@@ -115,11 +115,69 @@ void RegardItem::BuildAllPCs()
 			}
 		}
 	}
-
-	// base case
-	// recursion
 }
+void RegardItem::SortItemByID(vector<Item*> &unsortedItems) // shell sort as many items
+{
+	int length = unsortedItems.size();
 
+	int i, j, gap;
+	// gap would be considered half of length
+
+	Item* temp;
+
+	for (gap = length / 2; gap > 0; gap /= 2)
+	{
+		for (i = gap; i < length; i++)
+		{
+			for (j = i - gap; j >= 0 && unsortedItems[j]->GetID()>unsortedItems[j + gap]->GetID(); j -= gap)
+			{
+				temp = unsortedItems[j];
+				unsortedItems[j] = unsortedItems[j + gap];
+				unsortedItems[j + gap] = temp;
+			}
+		}
+	}
+}
+Item* RegardItem::SearchItemByID(vector<Item*> &sortedItems, int searchValue)
+{
+	int length = sortedItems.size();
+	int low = 0;
+	int high = length - 1;
+	int mid;
+
+	while (low <= high)
+	{
+		mid = (low + high) / 2; // can lop off floating point value
+
+		if (searchValue == sortedItems[mid]->GetID())
+		{
+			return sortedItems[mid]; // return the midpoint index if the search value is equal to the midpoint value
+		}
+		else if (searchValue > sortedItems[mid]->GetID())
+		{
+			low = mid + 1; // set new low point to the old mid point + 1 if the search value is greater than the midpoint value
+		}
+		else // <
+		{
+			high = mid - 1; // set new high point to the old mid point - 1 if the search value is less than the midpoint value
+		}
+	}
+	return 0; // result might not exist - find better way to handle this
+}
+void RegardItem::RemoveBasketFromItems(vector<Item*> &customerBasket)
+{
+	for (size_t i = 0; i < _currentItems.size(); i++)
+	{
+		for (size_t j = 0; j < customerBasket.size(); j++)
+		{
+			if (customerBasket[j]->GetID == _currentItems[i]->GetID())
+			{
+				customerBasket.erase(customerBasket.begin() + j); // needs testing
+			}
+		}
+	}
+	// remove items in customer basket from current items then clear basket
+}
 RegardItem::~RegardItem()
 {
 }

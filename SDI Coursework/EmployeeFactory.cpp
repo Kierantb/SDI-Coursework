@@ -10,7 +10,7 @@ EmployeeFactory::EmployeeFactory()
 }
 Employee* EmployeeFactory::CreateEmployee(string newEmployeeRecord) const
 {
-	Employee* newEmployee = 0;
+	Employee* newEmployee = NULL;
 
 	string employeeInfo[6]; // type, id, name, email
 	int i = 0;

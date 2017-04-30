@@ -74,12 +74,28 @@ void View::DisplayPCBuildAtIndex(vector<PC*> &allPCs, int index)
 		cout << temp2[i] << endl;
 	}
 }
-void View::DisplayItemName(vector<Item*> &itemVector)
+void View::DisplayItemName(vector<Item*> &allItems)
 {
-	for (size_t i = 0; i < itemVector.size(); i++)
+	for (size_t i = 0; i < allItems.size(); i++)
 	{
-		cout << itemVector[i]->GetName() << endl;
+		cout << allItems[i]->GetName() << endl;
 	}
+}
+void View::DisplayAllCustomerNames(vector<Customer*> &allCustomers)
+{
+	for (size_t i = 0; i < allCustomers.size(); i++)
+	{
+		cout << allCustomers[i]->GetName() << endl;
+	}
+}
+void View::PrintReceipt(vector<Item*> &customersPurchasedItems)
+{
+	cout << "You bought:" << endl;
+	for (size_t i = 0; i < customersPurchasedItems.size(); i++)
+	{
+		cout << customersPurchasedItems[i]->GetName() << customersPurchasedItems[i]->GetSellPrice()<< endl;
+	}
+	cout << "On MM/DD/YYYY." << endl;
 }
 void View::DisplayMainMenu()
 {
@@ -93,6 +109,7 @@ void View::DisplayMainMenu()
 	cout << "6. - Display all PC Builds" << endl;
 	cout << "7. - Display PC within price range" << endl;
 	cout << "8. - Display PC build at index" << endl;
+	cout << "9. - Display all customers" << endl;
 }
 void View::DisplayEmployeeFormat()
 {
@@ -104,7 +121,11 @@ void View::DisplayMenuSelectionRequest()
 }
 void View::DisplayInputRequest()
 {
-	cout << "\nPlease enter your input: ";
+	cout << "\nPlease enter your input!" << endl;
+}
+void View::DisplayIDRequest()
+{
+	cout << "Please enter the ID of your desired subject:";
 }
 int View::GetUserIntInput()
 {

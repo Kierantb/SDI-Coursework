@@ -46,6 +46,10 @@ double Item::GetSellPrice()
 {
 	return _sellPrice;
 }
+int Item::GetID()
+{
+	return _id;
+}
 Item::~Item()
 {
 }
